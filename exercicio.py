@@ -1,0 +1,5 @@
+print(10==11)
+print(type(True))
+print(type(5), type(5.5), end='##')
+print('thiago', 'gonçalves','seixas', sep="*", end='\n')
+print(r'thiago\"seixas\"')

@@ -1,0 +1,27 @@
+# Função Format
+#abaixo, o A B e 1.1 nas funções é apenas para ver o que tem na função. 
+
+# Tudo em Phyton é um objetos e objetos geralmente tem metodos dentro dele.
+# Metodos: são ações.E umas dessas ações é o FORMAT = format()
+# Quando ver o erro: out of range (fora do range) ao rodar o programa, quer dizer que 
+# vc está buscando algo que já acabou.
+
+a = 'AAAA'
+b = 'bbbbb'
+c = 1.1
+# Abaixo o a b c entre parenteses é a string. E no C coloquei :.5(5 casas decimais
+# depois da virgula e o f), assim no print mostrará c=1.10000
+# Se colocar a mais chaves {} , haverá o erro de range dito acima
+#no caso dessa função, as chaves sempre vão referenciar as funções, na sua sequencia
+# 1° {} referencia a, 2° {} referencia b, e assim por diante.
+formato = 'a={} b={} c={:.5f}'.format (a, b, c)
+
+print(formato)
+
+#segundo exemplo, pegando o exercicio do imc e formatando o ponto flutuante do resultado
+nome = "Thiago Seixas"
+altura = 1.80
+peso = 100
+imc = peso / (altura * altura)
+formato= 'nome={} altura={} imc{:,.6f}'.format(nome, altura, imc)
+print(formato)
